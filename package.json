@@ -1,0 +1,15 @@
+{
+  "name": "gazespace",
+  "version": "1.0.0",
+  "description": "Digital Art Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdulrahman Mousa",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.4.1"
+  }
+}
