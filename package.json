@@ -4,12 +4,33 @@
   "description": "Digital Art Store",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
   "author": "Abdulrahman Mousa",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "axios": "^0.26.1",
+    "babel-loader": "^8.0.6",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "csurf": "^1.10.0",
+    "dompurify": "^2.0.12",
     "dotenv": "^16.0.0",
-    "mongodb": "^4.4.1"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "jsonwebtoken": "^8.5.1",
+    "marked": "^4.0.12",
+    "md5": "^2.2.1",
+    "mongodb": "^4.4.1",
+    "nodemon": "^2.0.4",
+    "sanitize-html": "^2.7.0",
+    "socket.io": "^4.4.1",
+    "validator": "^13.7.0",
+    "webpack": "^5.70.0"
   }
 }

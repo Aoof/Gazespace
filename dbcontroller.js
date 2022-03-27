@@ -5,5 +5,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
     module.exports = client;
+
+    require("app").listen(3000 || process.env.PORT)
     client.close();
 });
