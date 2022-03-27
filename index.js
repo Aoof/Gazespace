@@ -1,0 +1,4 @@
+const sessions = require("./dbcontroller")
+const app = require("./app")
+
+app.listen(process.env.PORT || 3000)
