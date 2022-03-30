@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    height: -webkit-fill-available;
+}
+
+.background {
+    top: 0;
+    left: -20px;
+    position: fixed;
+
+    width: 105%;
+
+    background: linear-gradient(rgba(0, 2, 6, 0.9), rgba(3, 12, 41, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background img {
+    height: auto;
+    width: 105%;
+    opacity: 0.2;
+}
+
+.container {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    margin: auto;
+
+    width: 80%;
+    height: 80%;
+}
+
+.container nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: inline;
+}
+
+li {
+    float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+@media only screen and (max-width: 1350px) {
+    .background img {
+        height: 100%;
+        width: auto;
+    }
+}
