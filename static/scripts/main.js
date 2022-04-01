@@ -17,3 +17,18 @@ window.addEventListener('scroll', () => {
     const percentage = getScrollPercent();
     bgAnimation.seek(bgAnimation.duration * (percentage / 100))
 })
+
+// Selector logic
+let selected    = document.querySelector(".nav-link.selected");
+
+let topSelect   = document.createElement('img');
+let botSelect   = document.createElement('img');
+
+topSelect.className = "top";
+botSelect.className = "bottom";
+
+topSelect.src =
+botSelect.src = "./media/Selector.svg";
+
+selected.appendChild(topSelect)
+selected.appendChild(botSelect)
