@@ -1,0 +1,11 @@
+.content {
+    padding: 0 30px;
+}
+
+.content h1, .content p {
+    color: #fff;
+}
+
+.content p {
+    width: 75%;
+}

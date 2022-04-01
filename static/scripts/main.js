@@ -27,8 +27,10 @@ let botSelect   = document.createElement('img');
 topSelect.className = "top";
 botSelect.className = "bottom";
 
-topSelect.src =
+topSelect.src = "./media/Selector.svg";
 botSelect.src = "./media/Selector.svg";
 
 selected.appendChild(topSelect)
 selected.appendChild(botSelect)
+
+botSelect.style.top = (selected.clientHeight - 14) + "px";

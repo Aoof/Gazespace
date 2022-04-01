@@ -20,7 +20,7 @@ async function main() {
         app.use(express.json())
         
         let sessionOptions = session({
-            secret: "q88*o**o*q$8+^e*=0-#^wz7#s~*&0*&0*o*-#^+^9*o*n7~*&0x^l-#^q888kt",
+            secret: process.env.SESSIONSECRET,
             store: MongoStore.create({ client: mongoClient }),
             resave: false,
             saveUninitialized: false,
@@ -33,6 +33,8 @@ async function main() {
         app.use(function(req, res, next) {
             res.locals.errors = req.flash("errors")
             res.locals.success = req.flash("success")
+
+            res.locals.selected = -1
     
             next()
         })

@@ -18,9 +18,33 @@
             <a href="/" class="title">GAZESPACE</a>
 
             <ul>
-                <li><a href="/review" class="nav-link">Review</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
-                <li><a href="/shop" class="nav-link">Shop</a></li>
-                <li><a href="/" class="nav-link selected">About</a></li>
+                <% if (selection == "3") { %>
+                    <link rel="stylesheet" href="./css/review.css">
+                    <li><a href="/review"   class="nav-link selected">Review</a></li>
+                <% } else { %>
+                    <li><a href="/review"   class="nav-link">Review</a></li>
+                <% } %>
+
+
+                <% if (selection == "2") { %>
+                    <link rel="stylesheet" href="./css/contact.css">
+                    <li><a href="/contact"  class="nav-link selected">Contact</a></li>
+                <% } else { %>
+                    <li><a href="/contact"  class="nav-link">Contact</a></li>
+                <% } %>
+
+                <% if (selection == "1") { %>
+                    <link rel="stylesheet" href="./css/shop.css">
+                    <li><a href="/shop" class="nav-link selected">Shop</a></li>
+                <% } else { %>
+                    <li><a href="/shop" class="nav-link">Shop</a></li>
+                <% } %>
+
+                <% if (selection == "0") { %>
+                    <link rel="stylesheet" href="./css/home.css">
+                    <li><a href="/" class="nav-link selected">About</a></li>
+                <% } else { %>
+                    <li><a href="/" class="nav-link">About</a></li>
+                <% } %>
             </ul>
         </nav>
